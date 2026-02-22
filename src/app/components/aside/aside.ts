@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Inject } from '@angular/core';
+import { AsideService } from '../../services/aside';
 
 @Component({
   selector: 'app-aside',
@@ -7,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './aside.css',
 })
 export class Aside {
-
+  asideService = inject(AsideService);
 }

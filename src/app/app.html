@@ -1,1 +1,11 @@
-<app-home></app-home>
+<div class="main-container">
+  <app-aside></app-aside>
+  <div class="section" [class.open]="asideService.isOpen()">
+    <app-home></app-home>
+    <app-about></app-about>
+    <app-services></app-services>
+    <app-portfolio></app-portfolio>
+    <app-contact></app-contact>
+    <app-style-switcher></app-style-switcher>
+  </div>
+</div>
