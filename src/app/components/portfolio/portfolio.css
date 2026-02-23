@@ -1,0 +1,21 @@
+.portfolio-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  transform: translateY(100%);
+  transition: all 0.3s ease;
+}
+
+.portfolio-item-inner:hover .portfolio-title {
+  transform: translateY(0);
+}

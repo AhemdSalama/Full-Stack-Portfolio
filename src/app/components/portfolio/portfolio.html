@@ -13,58 +13,18 @@
     </div>
     <div class="row">
       <!-- ===== Portfolio Item Start -->
-      <div class="portfolio-item padd-15">
-        <div class="portfolio-item-inner shadow-dark">
-          <div class="portfolio-img">
-            <img src="images/portfolio/portfolio1.jpg" alt="" />
+      @for (project of projects; track project._id) {
+        <div class="portfolio-item padd-15">
+          <div class="portfolio-item-inner shadow-dark">
+            <div class="portfolio-img">
+              <img [src]="project.image" [alt]="project.title" />
+              <div class="portfolio-title">
+                <h3>{{ project.title }}</h3>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- ===== Portfolio Item End -->
-      <!-- ===== Portfolio Item Start -->
-      <div class="portfolio-item padd-15">
-        <div class="portfolio-item-inner shadow-dark">
-          <div class="portfolio-img">
-            <img src="images/portfolio/portfolio2.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <!-- ===== Portfolio Item End -->
-      <!-- ===== Portfolio Item Start -->
-      <div class="portfolio-item padd-15">
-        <div class="portfolio-item-inner shadow-dark">
-          <div class="portfolio-img">
-            <img src="images/portfolio/portfolio3.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <!-- ===== Portfolio Item End -->
-      <!-- ===== Portfolio Item Start -->
-      <div class="portfolio-item padd-15">
-        <div class="portfolio-item-inner shadow-dark">
-          <div class="portfolio-img">
-            <img src="images/portfolio/portfolio4.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <!-- ===== Portfolio Item End -->
-      <!-- ===== Portfolio Item Start -->
-      <div class="portfolio-item padd-15">
-        <div class="portfolio-item-inner shadow-dark">
-          <div class="portfolio-img">
-            <img src="images/portfolio/portfolio5.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <!-- ===== Portfolio Item End -->
-      <!-- ===== Portfolio Item Start -->
-      <div class="portfolio-item padd-15">
-        <div class="portfolio-item-inner shadow-dark">
-          <div class="portfolio-img">
-            <img src="images/portfolio/portfolio6.jpg" alt="" />
-          </div>
-        </div>
-      </div>
+      }
       <!-- ===== Portfolio Item End -->
     </div>
   </div>
